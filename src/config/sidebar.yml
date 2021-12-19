@@ -10,6 +10,8 @@
       link: '/about/meet-the-team'
     - label: The Pyramid of Care
       link: '/about/pyramid'
+    - label: Mobile App (Prototype)
+      link: '/about/prototype'
 
 - label: "General Education"
   items:
@@ -21,6 +23,16 @@
       link:  '/familybulletin/bpd'
     - label: "Nature and Your Mental Health"
       link:  "/familybulletin/nature"
+    - label: "Validation"
+      link: '/familybulletin/validation'
+    - label: "Transtheoretical Model"
+      link: '/familybulletin/theoretical'
+    - label: "Exploring Religion and Spiritually"
+      link: '/familybulletin/religion'
+    - label: "Behavioral Support Therapy"
+      link: '/familybulletin/behaviourtherapy'
+    - label: "Cognitive Behavioural Therapy"
+      link: '/familybulletin/cbt'
   
 - label: "Psycho-Education"
   items:

@@ -1,0 +1,38 @@
+# Sidebar navigation
+
+- label: 'Home'
+  link: '/'
+- label: 'About'
+  items:
+    - label: "What is famcarenow?"
+      link: '/about/about'
+    - label: 'Meet the Team'
+      link: '/about/meet-the-team'
+    - label: The Pyramid of Care
+      link: '/about/pyramid'
+
+- label: "General Education"
+  items:
+    - label: "Getting Started"
+      link: '/familybulletin/main'
+    - label: "Gender Diversity"
+      link:  '/familybulletin/gender'
+    - label: "Borderline Personality Disorder"
+      link:  '/familybulletin/bpd'
+    - label: "Nature and Your Mental Health"
+      link:  "/familybulletin/nature"
+  
+- label: "Psycho-Education"
+  items:
+    - label: "Getting Started"
+      link:  '/psychotherapy/main'
+
+- label: "Consultation"
+  items:
+    - label: "Getting Started"
+      link:  '/consultation/main'
+
+- label: "Family Therapy"
+  items:
+    - label: "General Resources"
+      link:  '/familytherapy/main'

@@ -1,0 +1,38 @@
+{
+  "name": "gatsby-starter-rocketdocs",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "starter-name": "gatsby-starter-rocketdocs",
+  "dependencies": {
+    "@rocketseat/gatsby-theme-docs": "^3.0.0",
+    "gatsby": "^4.2.0",
+    "gatsby-plugin-canonical-urls": "^4.2.0",
+    "gatsby-plugin-google-analytics": "^4.2.0",
+    "gatsby-plugin-manifest": "^4.2.0",
+    "gatsby-plugin-offline": "^5.2.0",
+    "gatsby-plugin-remove-trailing-slashes": "^4.2.0",
+    "gatsby-plugin-sitemap": "^5.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "theme-ui": "^0.12.1",
+    "typescript": "^4.3.5",
+    "styled-components": "^5.3.3",
+    "gh-pages": "^3.2.3"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "gatsby",
+    "gatsby-starter"
+  ],
+  "scripts": {
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  }
+}

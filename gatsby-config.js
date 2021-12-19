@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: `/famcarenow`,
   siteMetadata: {
     siteTitle: `famcarenow`,
     defaultTitle: `famcarenow`,

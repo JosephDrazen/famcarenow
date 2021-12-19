@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-01523ec8d13652c9b96d.js"
+    "url": "webpack-runtime-c7346cfa5a86fe6d3b93.js"
   },
   {
     "url": "framework-02fced52a07adb2a1d39.js"
@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "f0e45107-549a615315530a229048.js"
   },
   {
-    "url": "app-0cb991b388001c5a7e71.js"
+    "url": "app-e74e206f15604bc28d19.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "cf93d75456e35553ef07cd1122588ee7"
+    "revision": "622ac05b81e30e14f1b8629c8ee5ad20"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-21b69de1969e8cd9185e.js"
@@ -51,14 +51,14 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "96496d913cb542e25bf6417094549aea"
+    "revision": "b7a79a825b8a97fe095c42520a98d027"
   },
   {
     "url": "polyfill-75eb2c57e0c70628df3c.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "c8f9452c10b792cc322b9986e95c7e37"
+    "revision": "8fc3d7097179a22104f90c67b57336ad"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -145,12 +145,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^`), ``)
+  pathname = pathname.replace(new RegExp(`^/famcarenow`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-0cb991b388001c5a7e71.js`))) {
+  if (!resources || !(await caches.match(`/famcarenow/app-e74e206f15604bc28d19.js`))) {
     return await fetch(event.request)
   }
 
@@ -163,7 +163,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/famcarenow/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
